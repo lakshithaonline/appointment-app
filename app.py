@@ -1,5 +1,6 @@
 def cancel_appointment(status):
     """Cancel a booked appointment and reject invalid transitions."""
+    status = str(status).strip().lower()
     if status == "booked":
         return "Cancelled"
     elif status == "cancelled":
