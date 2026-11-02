@@ -16,6 +16,9 @@ class TestCancellation(unittest.TestCase):
             "Invalid appointment status"
         )
 
+    def test_status_is_case_and_space_insensitive(self):
+        self.assertEqual(cancel_appointment("  Booked "), "Cancelled")
+
 
 if __name__ == "__main__":
     unittest.main()

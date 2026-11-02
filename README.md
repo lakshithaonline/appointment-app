@@ -14,6 +14,6 @@ py -m unittest -v
 py app.py
 ```
 
-Expected test result: three tests pass. Expected app output: `Cancelled`.
+Expected test result: four tests pass. Expected app output: `Cancelled`.
 
 GitHub Actions runs the unit tests on pushes and pull requests using `.github/workflows/tests.yml`.
